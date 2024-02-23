@@ -36,12 +36,44 @@ public class CaeserEncryption {
 	}
 	     
 	if(direction == 0){// if direction is 0 then we go left 
-	          
+	    for(int i = 0;i <= pathText.length;i++){// containing the length of the message
+		char chr = pathText.charAt(0);
+		int letterIndex = 0;
+		int moves = 0;
+
+		for(int j = 0;j < alphabetArray.length;j++){
+		    
+		}
+
+		for(int j = 0;j <= shifter;j++){
+		   
+		}
+	    }
 	}else{// else the direction is right cus it's 0
 	     
 	}
                  
      } else throw new NullPointerException("Dear User, the message is null and cannot be encrypted !!");
   }
+
+  public static int binarySearch(char[] array, char target) {
+        int low = 0;
+        int high = array.length - 1;
+	int intTarget = (int) target
+
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+
+            if (array[mid] == intTarget) {
+                return mid; // Element found, return its index
+            } else if (array[mid] < intTarget) {
+                low = mid + 1; // Discard the left half
+            } else {
+                high = mid - 1; // Discard the right half
+            }
+        }
+
+        return '/u000'; // Element not found
+    }
 }
   
